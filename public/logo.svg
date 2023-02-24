@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.29 13.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+        font-family: FuturaPT-Medium, 'Futura PT';
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <text class="cls-1" transform="translate(0 10)"><tspan class="cls-2" x="0" y="0">r</tspan><tspan x="3.61" y="0">e</tspan><tspan class="cls-3" x="9.4" y="0">k</tspan><tspan x="14.57" y="0">ollektiv</tspan></text>
+  </g>
+</svg>
