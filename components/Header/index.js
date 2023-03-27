@@ -1,31 +1,38 @@
-import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 
-export default function Header() {
-  return (
-    <>
-      <StyledHeader>
-        <Link href="/">
-          <div>
-            <Logo src="/logo.svg" alt="Logo" width={100} height={50} />
-          </div>
-        </Link>
-      </StyledHeader>
-    </>
-  );
-}
+const NavWrapper = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2;
+`;
 
-const StyledHeader = styled.header`
-  height: 60px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+const LogoLink = styled.a`
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 35px;
+  margin-top: 90px;
+  padding-left: 50px;
+
+  @media (max-width: 768px) {
+    padding-left: 20px;
+  }
 `;
 
-const Logo = styled(Image)`
-  height: 40px;
+const LogoImage = styled(Image)`
+  height: 50px;
+  margin-right: 10px;
+  filter: invert(1);
 `;
+
+export default function Header() {
+  return (
+    <NavWrapper>
+      <LogoLink href="/">
+        <LogoImage src="/logo.svg" alt="Logo" width={200} height={50} />
+      </LogoLink>
+    </NavWrapper>
+  );
+}

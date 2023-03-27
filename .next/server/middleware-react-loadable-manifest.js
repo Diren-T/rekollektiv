@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"_app.js -> @/components/BGImage":{"id":"_app.js -> @/components/BGImage","files":["static/chunks/components_BGImage_index_js.js"]}}

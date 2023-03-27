@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Box = styled.div`
   position: fixed;
-  z-index: -1;
+
   top: 0;
   left: 0;
   width: 100vw;
@@ -43,14 +43,15 @@ function BGImage() {
 
   if (width && height) {
     return (
-      <Box style={{ backgroundImage: `url('/background01.jpg')` }}>
+      <Box style={{ backgroundImage: `url('/BG01.jpg')` }}>
         <Image
-          src="/background03.jpg"
+          src="/BG01.jpg"
           layout="fill"
           objectFit="cover"
-          objectPosition="center center"
-          alt="ein messer und kräuter auf einem schneidebrett"
+          alt="Rohbau"
           priority={true}
+          quality={90}
+          style={{ backgroundPosition: "center" }}
         />
       </Box>
     );
