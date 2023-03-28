@@ -52,7 +52,7 @@ const Copyright = styled.p`
   margin: 0;
 
   @media screen and (max-width: 768px) {
-    font-size: 7px; // Reduziere die Schriftgröße für Geräte mit einer Breite von maximal 768px
+    font-size: 10px; // Reduziere die Schriftgröße für Geräte mit einer Breite von maximal 768px
   }
 `;
 
@@ -62,7 +62,7 @@ export default function Footer() {
   useEffect(() => {
     const handleScroll = () => {
       // Überprüfen, ob der Benutzer nach unten gescrollt hat
-      if (window.pageYOffset > 10) {
+      if (window.pageYOffset > 0) {
         setShowFooter(true); // Wenn ja, zeige den Footer an
       } else {
         setShowFooter(false); // Ansonsten verstecke den Footer
@@ -79,9 +79,7 @@ export default function Footer() {
       <FooterWrapper style={{ bottom: showFooter ? "0" : "-60px" }}>
         {/* Inhalt des Footers */}
         <FooterContent>
-          <Copyright>
-            © {new Date().getFullYear()} rekollektiv Alle Rechte vorbehalten.
-          </Copyright>
+          <Copyright>© {new Date().getFullYear()} rekollektiv</Copyright>
           <FooterLink href="/impressum">Impressum</FooterLink>{" "}
           {/* Verwenden Sie FooterLink anstelle von ImpressumLink */}
           <FooterLink href="/datenschutz">Datenschutz</FooterLink>{" "}

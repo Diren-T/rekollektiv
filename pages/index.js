@@ -186,7 +186,7 @@ const Author = styled.span`
   margin-left: 1%;
   opacity: 0.8;
   @media screen and (max-width: 768px) {
-    font-size: 4vw;
+    font-size: 2.8vw;
   }
   @media screen and (max-width: 668px) and (orientation: landscape) {
     /* Styling für das iPhone SE im Querformat */
@@ -252,7 +252,8 @@ export default function Home() {
       <FooterWrapper isVisible={footerVisible}>
         <Footer />
       </FooterWrapper>
-      <Placeholder />
+      {/* <Placeholder /> */}
+      <p></p>
     </>
   );
 }
