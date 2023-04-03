@@ -76,6 +76,7 @@ const Box = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  transform: scaleX(-1);
 `;
 
 export function getWindowDimensions() {
