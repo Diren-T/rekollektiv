@@ -24,14 +24,14 @@ const LogoLink = styled.a`
 const LogoImage = styled(Image)`
   height: 50px;
   margin-right: 10px;
-  filter: invert(1);
+  // filter: invert(1);
 `;
 
 export default function Header() {
   return (
     <NavWrapper>
       <LogoLink href="/">
-        <LogoImage src="/logo.svg" alt="Logo" width={200} height={50} />
+        <LogoImage src="/Logo03.svg" alt="Logo" width={200} height={50} />
       </LogoLink>
     </NavWrapper>
   );
