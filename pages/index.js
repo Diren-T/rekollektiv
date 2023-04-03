@@ -173,7 +173,7 @@ const H1 = styled.h1`
   margin-top: 10vw;
   opacity: 0.8;
   @media screen and (max-width: 768px) {
-    font-size: 5vw;
+    font-size: 4.5vw;
     margin-top: 20vw;
   }
   @media screen and (max-width: 668px) and (orientation: landscape) {
@@ -213,7 +213,7 @@ const Author = styled.span`
   margin-left: 1%;
   opacity: 0.8;
   @media screen and (max-width: 768px) {
-    font-size: 2.8vw;
+    font-size: 2.5vw;
   }
   @media screen and (max-width: 668px) and (orientation: landscape) {
     /* Styling für das iPhone SE im Querformat */
